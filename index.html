@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2d5b321bfa.js" crossorigin="anonymous"></script>
+
+    <title>pass-gen</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Генератор паролей</h2>
+
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+
+        <div class="settings">
+
+            <div class="setting">
+                <label>Длина пароля</label>
+                <input type="number" id="length" min='6' max='20' value='20'/>
+            </div>
+            
+            <div class="setting">
+                <label>Добавить числа</label> 
+                <input type="checkbox" id="numbers" checked />
+            </div>
+
+            <div class="setting">
+                <label>Добавить символы</label> 
+                <input type="checkbox" id="symbols" checked />
+            </div>
+            
+            <div class="setting">
+                <label>Добавить строчные буквы</label> 
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+
+            <div class="setting">
+                <label>Добавить заглавные буквы</label> 
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Сгенерировать пароль
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
